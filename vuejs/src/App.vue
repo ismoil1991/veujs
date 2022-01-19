@@ -32,7 +32,7 @@ export default {
   },
   methods:{
     updateTitle:function(updatedTitle){
-      this.title = updatedTitle
+      this.title = updatedTitle;
     }
   }
 }
