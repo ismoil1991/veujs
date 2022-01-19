@@ -1,11 +1,11 @@
 <template>
   <header>
-    <h1 v-on:click="changeTitle">{{ title }}</h1>
+    <h1 v-on:click="changeTitle">{{title }}</h1>
     </header>
 </template>
 
 <script>
-import { bus } from '../main';
+import {bus} from '../main';
 export default {
   props:{
     title:{
