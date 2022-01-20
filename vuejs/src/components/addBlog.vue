@@ -7,6 +7,7 @@
         <input type="text" v-model.lazy="blog.title" required />
         <label for="">Blog Content:</label>
         <textarea v-model.lazy="blog.content"></textarea>
+        
         <div id="checkboxes">
             <label>Ninjas</label>
             <input type="checkbox" value="ninjas" v-model="blog.categories"/>
@@ -17,11 +18,13 @@
             <label>Cheese</label>
             <input type="checkbox" value="cheese" v-model="blog.categories"/>
         </div>
+
         <label>Author:</label>
         <select v-model="blog.author">
             <option v-for="author in authors">{{ author }}</option>
         </select>
         <button v-on:click.prevent="post">Add Blog</button>
+        
     </form>
     <div v-if="submitted">
         <h3>Thanks for adding your post</h3>
